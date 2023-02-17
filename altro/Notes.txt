@@ -1,0 +1,11 @@
+Latitudine e longitudine Cagliari = 39.25955880633013, 9.167415719768737
+
+
+API KEY open weather=   d55e12edd515f448b49e5c060fad1863
+
+
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+
+
+https://api.openweathermap.org/data/2.5/weather?lat=39.25955880633013&lon=9.167415719768737&appid=d55e12edd515f448b49e5c060fad1863
