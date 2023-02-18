@@ -1,3 +1,13 @@
+// Variables
+
+$primary-color: rgb(227, 227, 227);
+$secondary-color: rgb(162, 162, 163);
+$button-color: rgb(8, 142, 180);
+$border-radius: 20px;
+$text-color:white;
+
+// Base Styles
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -6,28 +16,30 @@ body {
 
 h1 {
   font-size: 55pt;
-  color: white;
+  color:$text-color;
 }
 
 h2 {
   font-size: 45pt;
-  color: white;
+  color:$text-color;
 }
 
 h3 {
   font-size: 35pt;
-  color: white;
+  color:$text-color;
 }
 
 h4 {
   font-size: 25pt;
-  color: white;
+  color:$text-color;
 }
 
 h5 {
   font-size: 15pt;
-  color: white;
+  color:$text-color;
 }
+
+// Search Bar
 
 .SB_Container {
   background-color: rgb(227, 227, 227);
@@ -40,12 +52,12 @@ h5 {
 }
 
 .SB_button {
-  background-color: rgb(8, 142, 180);
-  border-radius: 20px;
+  background-color: $button-color;
+  border-radius: $border-radius;
 }
 
 .SB_Input {
-  border-radius: 20px;
+  border-radius: $border-radius;
   border-color: rgba(14, 175, 220, 0.524);
   min-height: 20px;
   background-color: rgba(14, 175, 220, 0.197);
@@ -55,34 +67,39 @@ h5 {
   display: inline-block;
 }
 
+// Weather App
+
 .row_big {
-  background-color: rgb(227, 227, 227);
+  background-color: $primary-color;
   min-height: 300px;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 20px;
+  border-radius: $border-radius;
   justify-content: space-around;
 }
+
+// First Column
 
 .Col_01 {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: $border-radius;
   padding: 15px;
-  background-color: rgb(162, 162, 163);
-}
-.Col_01 h1 {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  border-radius: 100%;
-  padding: 10px;
-  background-color: rgb(8, 142, 180);
-  aspect-ratio: 1/1;
+  background-color: $secondary-color;
+
+  h1 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: rgb(8, 142, 180);
+    aspect-ratio: 1/1;
+  }
 }
 
 .Col_02 {
@@ -94,12 +111,18 @@ h5 {
   padding: 15px;
   background-color: rgb(162, 162, 163);
   flex-direction: column;
-}
-.Col_02 h1 {
-  display: flex;
-  border-radius: 100%;
-  padding: 20px;
-  background-color: rgb(162, 162, 163);
+
+  h1 {
+    display: flex;
+    border-radius: 100%;
+    padding: 20px;
+    background-color: $secondary-color;
+  }
+
+  // .weather_img img {
+  //   min-width: 20vh;
+  //   align-self: center;
+  // }
 }
 
 @media screen and (max-width: 768px) {
@@ -121,17 +144,19 @@ h5 {
   h5 {
     font-size: 10pt;
   }
+
   .row_big {
-    background-color: rgb(227, 227, 227);
+    background-color: $primary-color;
     padding-top: 8px;
     padding-bottom: 8px;
-    border-radius: 20px;
+    border-radius: $border-radius;
     justify-content: space-around;
   }
   .SB_Container h5 {
     display: none;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .weather_img {
     display: none;
@@ -151,14 +176,18 @@ h5 {
   h5 {
     font-size: 10pt;
   }
+
   .row_big {
-    background-color: rgb(227, 227, 227);
+    background-color: $primary-color;
     padding-top: 8px;
     padding-bottom: 8px;
-    border-radius: 20px;
+    border-radius: $border-radius;
     justify-content: space-around;
   }
 }
+
+//FOOTER//
+
 .myFooter {
   position: absolute;
   bottom: 0;
@@ -170,4 +199,4 @@ h5 {
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
-}/*# sourceMappingURL=App.css.map */
+}

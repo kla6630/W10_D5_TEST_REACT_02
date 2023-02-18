@@ -9,3 +9,35 @@ https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API k
 
 
 https://api.openweathermap.org/data/2.5/weather?lat=39.25955880633013&lon=9.167415719768737&appid=d55e12edd515f448b49e5c060fad1863
+
+
+
+
+
+////SEARCH BAR FUNZIONANTE MA BRUTTA///
+
+
+import { useState } from "react";
+import { Container } from "react-bootstrap";
+
+function SearchBar({ initialValue, onSearch }) {
+  const [searchValue, setSearchValue] = useState(initialValue);
+
+  const handleInputChange = (event) => {
+    setSearchValue(event.target.value);
+  };
+
+  const handleSearch = () => {
+    onSearch(searchValue);
+  };
+
+  return (
+    <Container fluid className="my-3">
+      <h3>Cerca il meteo in base alla tua città!</h3>
+      <input type="text" value={searchValue} onChange={handleInputChange} />
+      <button onClick={handleSearch}>Search</button>
+    </Container>
+  );
+}
+
+export default SearchBar;

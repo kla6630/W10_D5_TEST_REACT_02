@@ -2,8 +2,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const MyFooter = () => {
   const year = new Date().getFullYear();
+  
   return (
-    <footer className="bg-light">
+    <footer className="bg-light myFooter">
       <Container>
         <Row>
           <Col className="text-center">

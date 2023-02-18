@@ -1,9 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import "./App.scss";
 import WeatherFetch from "./components/Weather";
-
 import WeatherAppNavbar from "./components/Navbar";
-
 import WeatherAppFooter from "./components/Footer";
 
 function App() {
@@ -12,7 +10,7 @@ function App() {
       <WeatherAppNavbar />
       <WeatherFetch />
       <WeatherAppFooter />
-   </>
+    </>
   );
 }
 
