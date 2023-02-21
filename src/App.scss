@@ -4,7 +4,7 @@ $primary-color: rgb(227, 227, 227);
 $secondary-color: rgb(162, 162, 163);
 $button-color: rgb(8, 142, 180);
 $border-radius: 20px;
-$text-color:white;
+$text-color: white;
 
 // Base Styles
 
@@ -16,27 +16,27 @@ body {
 
 h1 {
   font-size: 55pt;
-  color:$text-color;
+  color: $text-color;
 }
 
 h2 {
   font-size: 45pt;
-  color:$text-color;
+  color: $text-color;
 }
 
 h3 {
   font-size: 35pt;
-  color:$text-color;
+  color: $text-color;
 }
 
 h4 {
   font-size: 25pt;
-  color:$text-color;
+  color: $text-color;
 }
 
 h5 {
   font-size: 15pt;
-  color:$text-color;
+  color: $text-color;
 }
 
 // Search Bar
@@ -118,17 +118,16 @@ h5 {
     padding: 20px;
     background-color: $secondary-color;
   }
+}
 
-  // .weather_img img {
-  //   min-width: 20vh;
-  //   align-self: center;
-  // }
+.WeatherIcon {
+  background-color: rgb(69, 176, 205);
+  border-radius: $border-radius;
+  color: White;
+  scale: 500%;
 }
 
 @media screen and (max-width: 768px) {
-  .weather_img {
-    display: none;
-  }
   h1 {
     font-size: 35pt;
   }
@@ -155,11 +154,21 @@ h5 {
   .SB_Container h5 {
     display: none;
   }
+
+  .WeatherIcon {
+    scale: 300%;
+    position: relative;
+    bottom: 50px;
+    right: 105px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .weather_img {
-    display: none;
+  .WeatherIcon {
+    scale: 400%;
+    position: relative;
+    bottom: 60px;
+    right: 125px;
   }
   h1 {
     font-size: 45pt;

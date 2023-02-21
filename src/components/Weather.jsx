@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col, Image, Container } from "react-bootstrap";
+import { Row, Col, /*Image,*/ Container } from "react-bootstrap";
 import SearchBar from "./SearchBar";
 
 import { FaTemperatureHigh, FaTemperatureLow, FaWind } from "react-icons/fa";
 import { TbArrowsUp, TbArrowsDown } from "react-icons/tb";
 import { WiHumidity } from "react-icons/wi";
+import Icone from "./Icone.jsx";
 
 const WeatherFetch = () => {
   const [weather, setWeather] = useState(null);
@@ -53,11 +54,12 @@ const WeatherFetch = () => {
               {weather.main.temp} <h4>°C</h4>
             </h1>
 
-            <div className="weather_img">
-              <Image
+            <div>
+              <Icone tempo={weather.weather[0].icon} />
+              {/* <Image
                 src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`}
                 alt={weather.weather[0].description}
-              />
+              /> */}
             </div>
           </Col>
 

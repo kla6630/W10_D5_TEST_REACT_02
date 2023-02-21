@@ -102,10 +102,14 @@ h5 {
   background-color: rgb(162, 162, 163);
 }
 
+.WeatherIcon {
+  background-color: rgb(69, 176, 205);
+  border-radius: 20px;
+  color: White;
+  scale: 500%;
+}
+
 @media screen and (max-width: 768px) {
-  .weather_img {
-    display: none;
-  }
   h1 {
     font-size: 35pt;
   }
@@ -131,10 +135,19 @@ h5 {
   .SB_Container h5 {
     display: none;
   }
+  .WeatherIcon {
+    scale: 300%;
+    position: relative;
+    bottom: 50px;
+    right: 105px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .weather_img {
-    display: none;
+  .WeatherIcon {
+    scale: 400%;
+    position: relative;
+    bottom: 60px;
+    right: 125px;
   }
   h1 {
     font-size: 45pt;
